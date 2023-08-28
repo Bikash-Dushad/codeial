@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        <%= title %>
+    </title>
+</head>
+<body>
+    <form action="/user/createSession" method="post">
+        
+        <%- include('_email'); %>
+        <%- include('_password'); %>
+        <input type="submit" value="login">
+    </form>
+</body>
+</html>

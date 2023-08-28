@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>
+        <%= title %>
+    </title>
+</head>
+<body>
+    <form action="/user/create" method="post">
+        <input type="text" placeholder="Enter your name" id="name" name="name" required>
+        <%- include('_email'); %>
+        <%- include('_password'); %>
+        <input type="password" placeholder="Enter password again" id="confirm_password" name="confirm_password" required />
+        <input type="submit" value="sign in">
+    </form>
+    
+</body>
+</html>
